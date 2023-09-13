@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/baseline_folder_24"
+        android:id="@+id/homeFragment"
+        android:title="Folder" />
+    <item
+        android:icon="@drawable/baseline_video_file_24"
+        android:id="@+id/allVideoFragment"
+        android:title="Videos" />
+
+</menu>

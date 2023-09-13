@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.videoplayers2.fragments.FolderFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_folder" >
+        <action
+            android:id="@+id/action_homeFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.videoplayers2.fragments.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" >
+        <action
+            android:id="@+id/action_videoFragment_to_exoPlayerMedia3"
+            app:destination="@id/exoPlayerMedia3" />
+    </fragment>
+    <activity
+        android:id="@+id/exoPlayerMedia3"
+        android:name="com.example.videoplayers2.activities.ExoPlayerMedia3"
+        android:label="activity_exo_player_media3"
+        tools:layout="@layout/activity_exo_player_media3" />
+    <fragment
+        android:id="@+id/allVideoFragment"
+        android:name="com.example.videoplayers2.fragments.AllVideoFragment"
+        android:label="fragment_all_video"
+        tools:layout="@layout/fragment_all_video" >
+        <action
+            android:id="@+id/action_allVideoFragment_to_exoPlayerMedia3"
+            app:destination="@id/exoPlayerMedia3" />
+    </fragment>
+</navigation>
